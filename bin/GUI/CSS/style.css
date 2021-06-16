@@ -1,0 +1,64 @@
+.root{
+	-fx-background-color: transparent;
+}
+.pane{
+	-fx-background-color: #333333;
+}
+
+.trans-btn-white-border{
+	-fx-background-color: transparent;
+	-fx-background-radius: 5px;
+	-fx-border-color: #cccccc;
+	-fx-border-radius: 5px;
+	-fx-border-witdh: 1px;
+	-fx-text-fill: whitesmoke
+}
+.gray-pane{
+	-fx-background-color: #e0e0e0;
+}
+.tf_box{
+	-fx-background-color: transparent;
+	-fx-border-color: #c9c9c9;
+	-fx-border-width:0px 0px 1px 0px;
+}
+.tf{
+	-fx-background-color: transparent;
+}
+
+.pink_button{
+	-fx-background-color: #ff7260;
+	-fx-background-radius: 5px;
+	-fx-text-fill: #ffffff;
+}
+
+.dialog-pane{
+	-fx-background-color: #3D3A3A;
+	-fx-background: transparent;
+}
+
+.dialog-pane > .button-bar > .container {
+	-fx-background-color: #3D3A3A;
+}
+
+.dialog-pane:header .header-panel{
+	-fx-background-color: #3D3A3A;
+}
+
+.dialog-pane:header .header-panel .label{
+	-fx-text-fill: white;
+	-fx-font-size: 15px;
+}
+
+.dialog-pane .button{
+	-fx-background-color: #3D3A3A;
+	-fx-border-color: white;
+	-fx-border-width: 2px;
+	-fx-cursor: hand;
+	-fx-text-fill: white;
+	-fx-font-size: 15px;
+}
+
+.dialog-pane .button:hover{
+	-fx-background-color: #02ad83;
+	-fx-font-weight: bold;
+}

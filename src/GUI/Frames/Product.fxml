@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchor_Root" prefHeight="549.0" prefWidth="1000.0" style="-fx-background-color: transparent;" stylesheets="@../CSS/Frames_style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Products_Management">
+   <children>
+      <TableView fx:id="product_Table" layoutX="14.0" layoutY="79.0" prefHeight="456.0" prefWidth="772.0" tableMenuButtonVisible="true">
+         <columns>
+            <TableColumn id="maSP" fx:id="maSP" prefWidth="64.0" text="Mã SP" />
+            <TableColumn id="hinhAnh" fx:id="hinhAnh" prefWidth="140.0" text="Hình Ảnh" />
+            <TableColumn id="tenSP" fx:id="tenSP" prefWidth="185.0" text="Tên SP" />
+            <TableColumn id="trangThai" fx:id="loaiSP" prefWidth="95.0" text="Loại SP" />
+            <TableColumn id="thuongHieu" fx:id="thuongHieu" prefWidth="107.0" text="Thương Hiệu" />
+            <TableColumn id="soLuong" fx:id="soLuong" prefWidth="70.0" text="Số Lượng" />
+            <TableColumn id="donGia" fx:id="donGia" minWidth="0.0" prefWidth="90.0" text="Đơn Giá" />
+            <TableColumn id="trangThai" fx:id="trangThai" prefWidth="60.0" text="Trạng Thái" />
+         </columns>
+      </TableView>
+      <JFXTextField fx:id="search_Box" focusColor="#5c85ff" layoutX="71.0" layoutY="30.0" onKeyPressed="#Search" prefHeight="36.0" prefWidth="266.0" style="-fx-text-fill: WHITE; -fx-font-size: 15px;" unFocusColor="#8d8d8d" />
+      <ImageView fx:id="search_Icon" fitHeight="49.0" fitWidth="50.0" layoutX="14.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Icons/search.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="823.0" layoutY="139.0" mnemonicParsing="false" onAction="#Edit" prefHeight="36.0" prefWidth="133.0" styleClass="button-normal" text="Sửa Sản Phẩm">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="823.0" layoutY="79.0" mnemonicParsing="false" onAction="#Insert" prefHeight="36.0" prefWidth="133.0" styleClass="button-normal" text="Thêm Sản Phẩm">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

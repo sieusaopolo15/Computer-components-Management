@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="anchor_Pane" prefHeight="150.0" prefWidth="500.0" stylesheets="@../CSS/Frames_style.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="Controllers.User_Detail_Controller">
+   <children>
+      <TableView fx:id="user_Detail_Table" layoutX="14.0" layoutY="14.0" prefHeight="77.0" prefWidth="477.0">
+        <columns>
+          <TableColumn fx:id="maKH" prefWidth="75.0" text="Mã KH" />
+          <TableColumn fx:id="hoTenKH" prefWidth="75.0" text="Họ Tên KH" />
+            <TableColumn fx:id="gioiTinh" prefWidth="75.0" text="Giới Tính" />
+            <TableColumn fx:id="ngaySinh" prefWidth="75.0" text="Ngày Sinh" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <JFXButton layoutX="429.0" layoutY="105.0" onAction="#Close" styleClass="button-normal" text="Đóng">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchor_Pane" prefHeight="400.0" prefWidth="400.0" style="-fx-padding: 10px;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Frames.Function.Product_Edit">
+   <children>
+      <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="24.0" layoutY="25.0" prefHeight="25.0" prefWidth="105.0" text="Mã SP:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="24.0" layoutY="75.0" prefHeight="25.0" prefWidth="105.0" text="Tên SP:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="24.0" layoutY="124.0" prefHeight="25.0" prefWidth="105.0" text="Loại SP:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="24.0" layoutY="171.0" prefHeight="25.0" prefWidth="105.0" text="Thương Hiệu:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="24.0" layoutY="225.0" prefHeight="25.0" prefWidth="105.0" text="Số Lượng:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="21.0" layoutY="274.0" prefHeight="25.0" prefWidth="105.0" text="Đơn Giá:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="21.0" layoutY="324.0" prefHeight="25.0" prefWidth="105.0" text="Trạng Thái:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="maSP" editable="false" layoutX="142.0" layoutY="22.0" prefHeight="30.0" prefWidth="51.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="tenSP" layoutX="142.0" layoutY="72.0" prefHeight="25.0" prefWidth="173.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="thuongHieu" layoutX="140.0" layoutY="168.0" prefHeight="30.0" prefWidth="82.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="soLuong" layoutX="137.0" layoutY="222.0" prefHeight="30.0" prefWidth="51.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="donGiaA" layoutX="137.0" layoutY="271.0" prefHeight="30.0" prefWidth="51.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <JFXButton layoutX="292.0" layoutY="362.0" onAction="#Save" prefHeight="37.0" prefWidth="82.0" text="Lưu">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="201.0" layoutY="362.0" onAction="#Cancle" prefHeight="37.0" prefWidth="82.0" text="Hủy Bỏ">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+      <TextField fx:id="donGiaB" layoutX="200.0" layoutY="271.0" prefHeight="30.0" prefWidth="51.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="donGiaC" layoutX="266.0" layoutY="270.0" prefHeight="30.0" prefWidth="51.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="257.0" layoutY="268.0" text=".">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="191.0" layoutY="268.0" text=".">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="loaiSP" layoutX="140.0" layoutY="119.0" prefHeight="25.0" prefWidth="173.0" style="-fx-font-size: 14px;" />
+      <ChoiceBox fx:id="status" layoutX="137.0" layoutY="322.0" prefHeight="30.0" prefWidth="105.0" style="-fx-font-size: 14px;" />
+   </children>
+</AnchorPane>

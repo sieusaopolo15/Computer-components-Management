@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchor_Pane" prefHeight="600.0" prefWidth="570.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Frames.Function.Product_Insert">
+   <children>
+      <ImageView fx:id="image" fitHeight="150.0" fitWidth="174.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Icons/image_missing.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="25.0" layoutY="176.0" onAction="#pick_Image" prefHeight="34.0" prefWidth="128.0" text="Chọn Hình Ảnh">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <Label alignment="CENTER_RIGHT" layoutX="209.0" layoutY="30.0" prefHeight="21.0" prefWidth="110.0" text="Mã Sản Phẩm:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="maSP" editable="false" layoutX="344.0" layoutY="25.0" prefHeight="31.0" prefWidth="63.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Label alignment="CENTER_RIGHT" layoutX="209.0" layoutY="70.0" prefHeight="21.0" prefWidth="110.0" text="Tên Sản Phẩm:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tenSP" layoutX="344.0" layoutY="65.0" prefHeight="31.0" prefWidth="209.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Label alignment="CENTER_RIGHT" layoutX="209.0" layoutY="110.0" prefHeight="21.0" prefWidth="110.0" text="Loại Sản Phẩm:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="category" layoutX="344.0" layoutY="105.0" prefWidth="150.0" style="-fx-font-size: 15px;" />
+      <Label alignment="CENTER_RIGHT" layoutX="211.0" layoutY="150.0" prefHeight="21.0" prefWidth="110.0" text="Thương Hiệu:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="brand" layoutX="344.0" layoutY="145.0" prefHeight="31.0" prefWidth="150.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Label alignment="CENTER_RIGHT" layoutX="211.0" layoutY="190.0" prefHeight="21.0" prefWidth="110.0" text="Đơn Giá">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="price" layoutX="344.0" layoutY="185.0" prefHeight="31.0" prefWidth="150.0" promptText="Ví dụ: 5.000.000">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Label layoutX="14.0" layoutY="240.0" prefHeight="21.0" prefWidth="110.0" text="Link File Ảnh:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="image_URL" editable="false" layoutX="41.0" layoutY="270.0" prefHeight="31.0" prefWidth="486.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Label layoutX="14.0" layoutY="311.0" prefHeight="21.0" prefWidth="110.0" text="Thư Mục Lưu:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="save_URL" editable="false" layoutX="41.0" layoutY="339.0" prefHeight="31.0" prefWidth="450.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Label layoutX="14.0" layoutY="385.0" prefHeight="21.0" prefWidth="110.0" text="Chi Tiết SP:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="details" layoutX="41.0" layoutY="413.0" prefHeight="103.0" prefWidth="486.0" promptText="Ghi chú: thêm phẩy và cách mỗi khi qua một ý mới, KHÔNG XUỐNG DÒNG">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextArea>
+      <JFXButton layoutX="494.0" layoutY="339.0" onAction="#Save_Image" prefHeight="25.0" prefWidth="35.0" ripplerFill="#8d8d8d" style="-fx-background-color: #c7c7c7; -fx-text-fill: #6b6b6b;" text="...">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="41.0" layoutY="536.0" onAction="#Insert" prefHeight="42.0" prefWidth="69.0" style="-fx-background-color: #c7c7c7; -fx-text-fill: #6b6b6b;" text="Thêm">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="130.0" layoutY="536.0" onAction="#Cancle" prefHeight="42.0" prefWidth="69.0" ripplerFill="#838383" style="-fx-background-color: #c7c7c7; -fx-text-fill: #6b6b6b;" text="Hủy">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

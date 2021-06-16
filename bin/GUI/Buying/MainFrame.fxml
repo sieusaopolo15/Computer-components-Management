@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchor_Pane" onMouseClicked="#Drag_Stage" prefHeight="700.0" prefWidth="1000.0" stylesheets="@../CSS/buying_frames.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.BuyingController">
+   <children>
+      <Label fx:id="user_FullName" alignment="CENTER" contentDisplay="TOP" layoutX="28.0" layoutY="28.0" prefHeight="70.0" prefWidth="177.0" style="-fx-text-fill: WHITE;" text="Xin Chào," textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Pane layoutX="6.0" layoutY="98.0" prefHeight="376.0" prefWidth="222.0" AnchorPane.bottomAnchor="226.0" AnchorPane.leftAnchor="6.0" AnchorPane.rightAnchor="772.0">
+         <children>
+            <JFXButton fx:id="buy" layoutX="43.0" layoutY="67.0" onAction="#Buying_Scene" prefHeight="30.0" prefWidth="129.0" styleClass="normal-button" text="Mua Hàng">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="#435ee6" glyphName="SHOPPING_BAG" size="1.5em" />
+               </graphic></JFXButton>
+            <Separator layoutX="11.0" layoutY="24.0" prefHeight="15.0" prefWidth="200.0" />
+            <JFXButton fx:id="invoice" alignment="TOP_LEFT" layoutX="43.0" layoutY="117.0" onAction="#Check_Order" prefHeight="30.0" prefWidth="129.0" styleClass="normal-button" text="Xem Hoá Đơn">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="#435ee6" glyphName="CHECK" size="1.5em" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="sign_Out" layoutX="43.0" layoutY="167.0" onAction="#Information" prefHeight="30.0" prefWidth="129.0" styleClass="normal-button" text="Thông Tin CN">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="#435ee6" glyphName="INFO_CIRCLE" size="1.5em" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="exit" layoutX="44.0" layoutY="217.0" onAction="#Close_Button" prefHeight="30.0" prefWidth="129.0" styleClass="normal-button" text="Thoát">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="#435ee6" glyphName="CLOSE" size="1.5em" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </Pane>
+      <StackPane fx:id="stack_Pane" layoutX="246.0" prefHeight="700.0" prefWidth="754.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="246.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Separator layoutX="225.0" layoutY="10.0" orientation="VERTICAL" prefHeight="681.0" prefWidth="0.0" />
+   </children>
+</AnchorPane>

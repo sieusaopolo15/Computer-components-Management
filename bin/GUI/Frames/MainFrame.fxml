@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchor_Pane" onMouseClicked="#Drag_Stage" prefHeight="700.0" prefWidth="1000.0" stylesheets="@../CSS/Frames_style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.admin_Controls">
+   <children>
+      <JFXTabPane layoutX="-2.0" prefHeight="149.0" prefWidth="908.0" AnchorPane.leftAnchor="-2.0" AnchorPane.rightAnchor="-6.0">
+         <tabs>
+            <Tab fx:id="system_Management" text="Quản Lý Thông Tin">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Pane prefHeight="112.0" prefWidth="900.0" styleClass="black-pane" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <children>
+                              <JFXButton fx:id="user_Management" cache="true" contentDisplay="TOP" layoutX="15.0" layoutY="15.0" onAction="#QuanLy_NguoiDung" prefHeight="80.0" prefWidth="150.0" text="Quản Lý Người Dùng" textFill="WHITE" textOverrun="WORD_ELLIPSIS">
+                                 <graphic>
+                                    <ImageView fitHeight="51.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../Icons/user.png" />
+                                       </image>
+                                       <viewport>
+                                          <Rectangle2D />
+                                       </viewport>
+                                    </ImageView>
+                                 </graphic>
+                              </JFXButton>
+                              <JFXButton fx:id="employee_Management" cache="true" contentDisplay="TOP" layoutX="175.0" layoutY="15.0" onAction="#QuanLy_NhanVien" prefHeight="80.0" prefWidth="150.0" text="Quản Lý Nhân Viên" textFill="WHITE" textOverrun="WORD_ELLIPSIS">
+                                 <graphic>
+                                    <ImageView fitHeight="51.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../Icons/employee.png" />
+                                       </image>
+                                       <viewport>
+                                          <Rectangle2D />
+                                       </viewport>
+                                    </ImageView>
+                                 </graphic>
+                              </JFXButton>
+                              <JFXButton fx:id="sign_Out" cache="true" contentDisplay="TOP" layoutX="335.0" layoutY="16.0" onAction="#Sign_Out" prefHeight="80.0" prefWidth="150.0" text="Đăng Xuất" textFill="WHITE" textOverrun="WORD_ELLIPSIS">
+                                 <graphic>
+                                    <ImageView fitHeight="48.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../Icons/log_out.png" />
+                                       </image>
+                                       <viewport>
+                                          <Rectangle2D />
+                                       </viewport>
+                                    </ImageView>
+                                 </graphic>
+                              </JFXButton>
+                              <JFXButton fx:id="exit" cache="true" contentDisplay="TOP" layoutX="495.0" layoutY="16.0" onAction="#Close" prefHeight="80.0" prefWidth="150.0" text="Thoát Chương Trình" textFill="WHITE" textOverrun="WORD_ELLIPSIS">
+                                 <graphic>
+                                    <ImageView fitHeight="48.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../Icons/exit.png" />
+                                       </image>
+                                       <viewport>
+                                          <Rectangle2D />
+                                       </viewport>
+                                    </ImageView>
+                                 </graphic>
+                              </JFXButton>
+                           </children>
+                        </Pane>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Quản Lý Hệ Thống">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Pane prefHeight="112.0" prefWidth="1000.0" styleClass="black-pane">
+                           <children>
+                              <JFXButton fx:id="storage_Management" cache="true" contentDisplay="TOP" layoutX="15.0" layoutY="16.0" onAction="#QuanLy_Kho" prefHeight="80.0" prefWidth="150.0" text="Quản Lý Kho" textFill="WHITE" textOverrun="WORD_ELLIPSIS">
+                                 <graphic>
+                                    <ImageView fitHeight="51.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../Icons/storage.png" />
+                                       </image>
+                                       <viewport>
+                                          <Rectangle2D />
+                                       </viewport>
+                                    </ImageView>
+                                 </graphic>
+                              </JFXButton>
+                              <JFXButton fx:id="product_Management" cache="true" contentDisplay="TOP" layoutX="175.0" layoutY="15.0" onAction="#QuanLy_SanPham" prefHeight="80.0" prefWidth="150.0" text="Quản Lý Sản Phẩm" textFill="WHITE" textOverrun="WORD_ELLIPSIS">
+                                 <graphic>
+                                    <ImageView fitHeight="53.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../Icons/merchandise.png" />
+                                       </image>
+                                       <viewport>
+                                          <Rectangle2D />
+                                       </viewport>
+                                    </ImageView>
+                                 </graphic>
+                              </JFXButton>
+                              <JFXButton fx:id="supplier_Management" cache="true" contentDisplay="TOP" layoutX="335.0" layoutY="15.0" onAction="#QuanLy_NCC" prefHeight="80.0" prefWidth="150.0" text="Quản Lý Nhà Cung Cấp" textFill="WHITE" textOverrun="WORD_ELLIPSIS">
+                                 <graphic>
+                                    <ImageView fitHeight="56.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../Icons/supplier.png" />
+                                       </image>
+                                       <viewport>
+                                          <Rectangle2D />
+                                       </viewport>
+                                    </ImageView>
+                                 </graphic>
+                              </JFXButton>
+                              <JFXButton fx:id="bill_Management" cache="true" contentDisplay="TOP" layoutX="495.0" layoutY="15.0" onAction="#QuanLy_DonHang" prefHeight="80.0" prefWidth="150.0" text="Quản Lý Đơn Hàng" textFill="WHITE" textOverrun="WORD_ELLIPSIS">
+                                 <graphic>
+                                    <ImageView fitHeight="48.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../Icons/unit.png" />
+                                       </image>
+                                       <viewport>
+                                          <Rectangle2D />
+                                       </viewport>
+                                    </ImageView>
+                                 </graphic>
+                              </JFXButton>
+                              <JFXButton fx:id="sales" cache="true" contentDisplay="TOP" layoutX="655.0" layoutY="12.0" onAction="#Sales_Report" prefHeight="85.0" prefWidth="144.0" text="Thống Kê Báo Cáo" textFill="WHITE" textOverrun="WORD_ELLIPSIS">
+                                 <graphic>
+                                    <ImageView fitHeight="51.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../Icons/statistical.png" />
+                                       </image>
+                                       <viewport>
+                                          <Rectangle2D />
+                                       </viewport>
+                                    </ImageView>
+                                 </graphic>
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </JFXButton>
+                           </children>
+                        </Pane>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+         </tabs>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXTabPane>
+      <StackPane fx:id="stack_Pane" layoutX="-1.0" layoutY="151.0" prefHeight="549.0" prefWidth="1000.0" styleClass="black-pane" />
+   </children>
+</AnchorPane>

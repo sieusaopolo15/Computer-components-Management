@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox id="VBox" fx:id="login" alignment="CENTER_LEFT" prefHeight="400.0" prefWidth="400.0" styleClass="gray-pane" stylesheets="@../../CSS/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Forms.User_Login.MainController">
+   <children>
+      <Label fx:id="signIn_Label" layoutY="10.0" text="Đăng Nhập" textFill="#ff7260" VBox.vgrow="ALWAYS">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="20.0" right="15.0" top="20.0" />
+         </VBox.margin>
+      </Label>
+      <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="200.0" styleClass="tf_box">
+         <VBox.margin>
+            <Insets left="15.0" right="15.0" top="20.0" />
+         </VBox.margin>
+         <children>
+            <TextField fx:id="email" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onKeyPressed="#onEnter" promptText="Email" styleClass="tf" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <FontAwesomeIconView fx:id="email_Icon" fill="#575656" glyphName="USER" size="2.1em" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="25.0" layoutY="253.0" prefHeight="45.0" prefWidth="200.0" styleClass="tf_box">
+         <children>
+            <PasswordField fx:id="password" onKeyPressed="#onEnter" prefHeight="38.0" prefWidth="369.0" promptText="Mật Khẩu" styleClass="tf">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </PasswordField>
+            <FontAwesomeIconView fx:id="password_Icon" fill="#575656" glyphName="LOCK" size="2.1em" />
+         </children>
+         <VBox.margin>
+            <Insets left="15.0" right="15.0" top="20.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="275.0" prefHeight="45.0" prefWidth="200.0">
+         <VBox.margin>
+            <Insets left="15.0" right="15.0" top="20.0" />
+         </VBox.margin>
+         <children>
+            <JFXButton fx:id="sign_In" onAction="#Sign_In" prefHeight="39.0" prefWidth="111.0" ripplerFill="WHITE" styleClass="pink_button" text="Đăng Nhập" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </HBox>
+   </children>
+</VBox>

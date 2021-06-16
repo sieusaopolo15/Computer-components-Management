@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchor_Pane" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: transparent;" stylesheets="@../CSS/Frames_style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Order_Management">
+   <children>
+      <TableView fx:id="order_Table" layoutX="14.0" layoutY="79.0" prefHeight="606.0" prefWidth="676.0">
+         <columns>
+            <TableColumn fx:id="maDH" prefWidth="75.0" text="Mã Đơn Hàng" />
+            <TableColumn fx:id="maKH" prefWidth="75.0" text="Mã Khách Hàng" />
+            <TableColumn fx:id="hoTenNV" prefWidth="75.0" text="Họ Tên NV" />
+            <TableColumn fx:id="ngayLap" prefWidth="75.0" text="Ngày Lập Đơn" />
+            <TableColumn fx:id="tongTien" prefWidth="75.0" text="Tổng Tiền" />
+            <TableColumn fx:id="trangThai" prefWidth="75.0" text="Trạng Thái" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <JFXTextField fx:id="search_Box" focusColor="#5c85ff" layoutX="71.0" layoutY="35.0" onKeyPressed="#Search" prefHeight="36.0" prefWidth="266.0" style="-fx-text-fill: WHITE; -fx-font-size: 15px;" unFocusColor="#8d8d8d" />
+      <ImageView fx:id="search_Icon" fitHeight="49.0" fitWidth="50.0" layoutX="14.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Icons/search.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="855.0" layoutY="215.0" mnemonicParsing="false" onAction="#Edit" prefHeight="36.0" prefWidth="125.0" styleClass="button-normal" text="Cập Nhật">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="565.0" layoutY="35.0" mnemonicParsing="false" onAction="#Open_Detail" prefHeight="36.0" prefWidth="125.0" styleClass="button-normal" stylesheets="@../CSS/Frames_style.css" text="Xem Chi Tiết">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="710.0" layoutY="215.0" mnemonicParsing="false" onAction="#Delete" prefHeight="36.0" prefWidth="125.0" styleClass="button-normal" text="Xóa Đơn Hàng">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <ChoiceBox fx:id="NV" layoutX="821.0" layoutY="79.0" prefHeight="31.0" prefWidth="159.0" style="-fx-font-size: 15px;" />
+      <ChoiceBox fx:id="Status" layoutX="821.0" layoutY="138.0" prefHeight="31.0" prefWidth="159.0" style="-fx-font-size: 15px;" />
+      <Label alignment="CENTER_RIGHT" layoutX="710.0" layoutY="84.0" text="NV Giao Hàng:" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="710.0" layoutY="142.0" prefHeight="21.0" prefWidth="98.0" text="Trạng Thái:" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

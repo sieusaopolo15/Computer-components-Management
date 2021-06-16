@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchor_Pane" prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Storage_Detail_Controller">
+   <children>
+      <TableView fx:id="storage_Table" layoutX="14.0" layoutY="14.0" prefHeight="297.0" prefWidth="774.0">
+        <columns>
+          <TableColumn fx:id="maKho" prefWidth="75.0" text="Mã Kho" />
+          <TableColumn fx:id="maSP" prefWidth="87.0" text="Mã Sản Phẩm" />
+            <TableColumn fx:id="NCC" prefWidth="87.0" text="Nhà Cung Cấp" />
+            <TableColumn fx:id="soLuong" prefWidth="74.0" text="Số Lượng" />
+            <TableColumn fx:id="ngayNhap" prefWidth="74.0" text="Ngày Nhập" />
+            <TableColumn fx:id="donGia" prefWidth="74.0" text="Đơn Giá" />
+            <TableColumn fx:id="tongTien" prefWidth="74.0" text="Tổng Tiền" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <JFXButton layoutX="710.0" layoutY="322.0" onAction="#Back" prefHeight="37.0" prefWidth="76.0" style="-fx-background-color: #c7c7c7;" text="Quay Về">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchor_Root" prefHeight="549.0" prefWidth="1000.0" style="-fx-background-color: transparent;" stylesheets="@../CSS/Frames_style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Storage_Management">
+   <children>
+      <TableView fx:id="storage_Table" layoutX="9.0" layoutY="79.0" prefHeight="455.0" prefWidth="781.0">
+         <columns>
+            <TableColumn fx:id="maKho" prefWidth="75.0" text="Mã Kho" />
+            <TableColumn fx:id="tenKho" prefWidth="137.0" text="Tên Kho" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Button layoutX="818.0" layoutY="79.0" mnemonicParsing="false" onAction="#Nhap_Hang" prefHeight="36.0" prefWidth="157.0" styleClass="button-normal" text="Nhập Hàng">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="820.0" layoutY="140.0" mnemonicParsing="false" onAction="#Xuat_Hang" prefHeight="36.0" prefWidth="157.0" styleClass="button-normal" text="Xuất Hàng">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="820.0" layoutY="198.0" mnemonicParsing="false" onAction="#Xem_ChiTiet" prefHeight="36.0" prefWidth="157.0" styleClass="button-normal" text="Xem Chi Tiết Kho">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

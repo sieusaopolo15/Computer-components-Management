@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchor_Pane" prefHeight="380.0" prefWidth="400.0" stylesheets="@../CSS/Frames_style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Detail_Control">
+   <children>
+      <Text layoutX="14.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Họ tên người nhận:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="name" layoutX="31.0" layoutY="50.0" prefHeight="31.0" prefWidth="336.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Text layoutX="14.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Địa chỉ giao hàng:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="address" layoutX="31.0" layoutY="137.0" prefHeight="31.0" prefWidth="336.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Text layoutX="14.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Số điện thoại">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="tel" layoutX="31.0" layoutY="224.0" prefHeight="31.0" prefWidth="137.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <JFXButton layoutX="287.0" layoutY="284.0" onAction="#Save" prefHeight="37.0" prefWidth="80.0" styleClass="button-normal" text="Lưu">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="200.0" layoutY="284.0" onAction="#Cancle" prefHeight="37.0" prefWidth="80.0" styleClass="button-normal" text="Hủy Bỏ">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

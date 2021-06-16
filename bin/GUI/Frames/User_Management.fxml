@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchor_Root" prefHeight="549.0" prefWidth="1000.0" stylesheets="@../CSS/Frames_style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.user_Management">
+   <children>
+      <ImageView fx:id="search_Icon" fitHeight="49.0" fitWidth="50.0" layoutX="14.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Icons/search.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="search_Box" focusColor="#5c85ff" layoutX="71.0" layoutY="35.0" onKeyPressed="#Search" prefHeight="36.0" prefWidth="223.0" style="-fx-text-fill: WHITE; -fx-font-size: 15px;" unFocusColor="#8d8d8d" />
+      <TableView fx:id="user_Table" layoutX="14.0" layoutY="83.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="450.0" prefWidth="970.0" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="16.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="83.0">
+        <columns>
+            <TableColumn fx:id="maTK" editable="false" prefWidth="49.0" text="Mã Tài Khoản" />
+          <TableColumn fx:id="maKH" editable="false" prefWidth="49.0" text="Mã KH" />
+          <TableColumn fx:id="tenTK" editable="false" prefWidth="259.0" text="Tên Tài Khoản" />
+            <TableColumn fx:id="trangThai" editable="false" prefWidth="66.0" text="Trạng Thái" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <JFXButton fx:id="btn_setStatus" layoutX="823.0" layoutY="40.0" onAction="#setStatus" prefHeight="36.0" prefWidth="146.0" styleClass="button-normal" text="Vô Hiệu/Kích Hoạt">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="685.0" layoutY="40.0" onAction="#checkInfo" prefHeight="36.0" prefWidth="122.0" styleClass="button-normal" text="Xem Thông Tin">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
